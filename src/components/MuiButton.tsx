@@ -104,6 +104,9 @@ const MuiButton = () => {
 					</ToggleButton>
 				</ToggleButtonGroup>
 			</Stack>
+			<Stack direction="row">
+				<Button variant="contained" fullWidth >Button</Button>
+			</Stack>
 		</Stack>
 	)
 }
