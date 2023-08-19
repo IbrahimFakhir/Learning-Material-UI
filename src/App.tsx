@@ -4,8 +4,9 @@
 /* import MuiSelect from "./components/MuiSelect" */
 /* import MuiRadioButton from "./components/MuiRadioButton" */
 /* import MuiLayout from "./components/MuiLayout" */
+/* import MuiCard from "./components/MuiCard" */
 
-import MuiCard from "./components/MuiCard"
+import MuiNavbar from "./components/MuiNavbar"
 
 function App() {
 	return (
@@ -16,7 +17,8 @@ function App() {
 			{/* <MuiSelect /> */}
 			{/* <MuiRadioButton /> */}
 			{/* <MuiLayout /> */}
-			<MuiCard />
+			{/* <MuiCard /> */}
+			<MuiNavbar />
 		</div>
 	)
 }
