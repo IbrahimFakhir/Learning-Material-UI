@@ -1,31 +1,40 @@
-import { Box } from "@mui/material"
+import { Box, Stack, Divider } from "@mui/material"
 
 const MuiLayout = () => {
 	return (
 		<>
-			<Box
+			<Stack
 				sx={{
-					backgroundColor: "primary.main",
-					color: "white",
-					height: "100px",
-					width: "100px",
-					padding: "16px",
-					"&:hover": {
-						backgroundColor: "primary.light",
-					}
+					border: "1px solid"
 				}}
+				direction="row"
+				spacing={2}
+				divider={<Divider orientation="vertical" flexItem />}
 			>
-				Codevolution
-			</Box>
-			<Box
-				display="flex"
-				height="100px"
-				width="100px"
-				bgcolor="success.light"
-				p={2}
-			>
-				
-			</Box>
+				<Box
+					sx={{
+						backgroundColor: "primary.main",
+						color: "white",
+						height: "100px",
+						width: "100px",
+						padding: "16px",
+						"&:hover": {
+							backgroundColor: "primary.light",
+						}
+					}}
+				>
+					Codevolution
+				</Box>
+				<Box
+					display="flex"
+					height="100px"
+					width="100px"
+					bgcolor="success.light"
+					p={2}
+				>
+					
+				</Box>
+			</Stack>
 		</>
 	)
 }
