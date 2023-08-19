@@ -3,13 +3,8 @@ import SendIcon from '@mui/icons-material/Send';
 import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import FormatItalicIcon from '@mui/icons-material/FormatItalic';
 import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
-import { useState } from "react";
 
 const MuiButton = () => {
-	const [formats, setFormats] = useState<string[]>([])
-
-	console.log(formats)
-
 	return (
 		<Stack spacing={4}>
 			<Stack spacing={2} direction="row">
@@ -81,9 +76,7 @@ const MuiButton = () => {
 			</Stack>
 			<Stack direction="row">
 				<ToggleButtonGroup 
-					aria-label="text formatting" 
-					value={formats} 
-					onChange={handleFormatChange}
+					aria-label="text formatting"
 					size="small"
 					color="success"
 					orientation="vertical"
