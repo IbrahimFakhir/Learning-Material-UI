@@ -10,10 +10,6 @@ const MuiButton = () => {
 
 	console.log(formats)
 
-	const handleFormatChange = (e: React.MouseEvent<HTMLElement>, updatedFormats: string[]) => {
-		setFormats(updatedFormats);
-	}
-
 	return (
 		<Stack spacing={4}>
 			<Stack spacing={2} direction="row">
